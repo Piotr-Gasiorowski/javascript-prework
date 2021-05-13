@@ -1,2 +1,18 @@
+.container {
+  background-color: lightgrey;
+  padding: 50px 0 0 300px;
+  margin: 35px 0 35px 0;
+  height: 500px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.button {
+  border: black;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  background-color: white;
+  margin-right: 20px 15px 20px 0;
+  text-align: center;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBRTtFQUNFLDJCQUEwQjtFQUMxQix1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLGFBQWE7QUNDakI7O0FERUE7RUFDSSxhQUFhO0VBQ2IsWUFBWTtFQUNaLFlBQVk7RUFDWixxQkFBcUI7RUFDckIsdUJBQXVCO0VBQ3ZCLDhCQUE4QjtFQUM5QixrQkFBa0I7RUFDbEIsaUJBQWlCO0FDQ3JCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
