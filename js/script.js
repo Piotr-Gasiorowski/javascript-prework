@@ -44,5 +44,5 @@ if(computerMove == 'kamień' && playerMove == 'papier'){
 }else if(computerMove == 'papier' && playerMove == 'kamień'){
   printMessage('Komputer wygrywa!');
   else (playerMove == computerMove) {
-	printMessage('!!! REMIS !!!')
+	printMessage('!!! REMIS !!!');
   }
