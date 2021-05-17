@@ -1,6 +1,6 @@
 
 {function playGame(playerInput){
-	console.log ()
+	console.log('Start')
 	
 	clearMessages();
 	
