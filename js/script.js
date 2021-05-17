@@ -1,3 +1,4 @@
+
 {function playGame(playerInput){
 	clearMessages();
 	
@@ -11,9 +12,9 @@
 			return 'kamień';
 		} else if(argMoveId == 2){
 			return 'nożyce';
-		}	else if(argMoveId == 3){
+		} else if(argMoveId == 3){
 			return 'papier';
-		} else{
+		} else {
 			printMessage('Nie ma takiego ruchu');
 		}
 	}
@@ -58,16 +59,16 @@ console.log('Gracz wpisał: ' + playerInput);
 			printMessage('Komputer wygrywa!');
 		}
 	}
-	document.getElementById('play-rock').addEventListener('click', function() {
-		playGame(1);
-	});
+}
+document.getElementById('play-rock').addEventListener('click', function() {
+	playGame(1);
+});
 
-	document.getElementById('play-paper').addEventListener('click', function() {
-		playGame('2');
-	});
+document.getElementById('play-paper').addEventListener('click', function() {
+	playGame('2');
+});
 
-	document.getElementById('play-scissors').addEventListener('click', function() {
-		playGame('3');
-	});
-	}
+document.getElementById('play-scissors').addEventListener('click', function() {
+	playGame('3');
+});
 }
