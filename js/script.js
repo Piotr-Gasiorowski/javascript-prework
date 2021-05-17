@@ -1,15 +1,14 @@
-
 {function playGame(playerInput){
-	console.log('Start')
+	console.log('playerInput');
 	
 	clearMessages();
+		console.log('clearMessages');
 	
 	const randomNumber = Math.floor(Math.random() * 3 + 1);
-
 	console.log('Wylosowana liczba to: ' + randomNumber);
 
 	const getMoveName = function(argMoveId) {
-
+		console.log(argMoveId)
 		if(argMoveId == 1){
 			return 'kamień';
 		} else if(argMoveId == 2){
@@ -20,21 +19,7 @@
 			printMessage('Nie ma takiego ruchu');
 		}
 	}
-
-/*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-
-console.log('Gracz wpisał: ' + playerInput);
-*/
-    const playerMove = getMoveName(playerInput);
-
-/* if(playerInput == '1'){
-  playerMove = 'kamień';
-    else if(playerInput == '2'){
-		playerMove = 'nożyce';
-	else if(playerInput == '3'){
-		playerMove = 'papier';
-}
-*/
+/*    const playerMove = getMoveName(playerInput);*/
 /*const getMoveName = function(argMoveId) {
 	if (argMoveId == 1) {
 		return 'kamień';
@@ -49,20 +34,28 @@ console.log('Gracz wpisał: ' + playerInput);
 }
 */
 	const displayResult = function(argComputerMove, argPlayerMove){
-		printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+		printMessage('Komputer zagrał ' + argComputerMove + ', a Ja ' + argPlayerMove);
 
 		if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
-			printMessage('Ty wygrywasz!');
+			printMessage('Ja wygrywam!');
 		} else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-			printMessage('Ty wygrywasz!');
+			printMessage('Ja wygrywam!');
 		} else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-			printMessage('Ty wygrywasz!');
+			printMessage('Ja wygrywam!');
 		} else if(argPlayerMove == argComputerMove) {
 			printMessage('!!! REMIS !!!');
 		} else {
 			printMessage('Komputer wygrywa!');
 		}
 	}
+	const computerMove = getMoveName(randomNumber);
+	printMessage('Komputer wybrał: ' + computerMove);
+	/*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
+  
+	const playerMove = getMoveName(playerInput);
+  
+	printMessage('Mój ruch to: ' + playerMove);
+	displayResult(computerMove, playerMove);
 }
 document.getElementById('play-rock').addEventListener('click', function() {
 	playGame('1');
