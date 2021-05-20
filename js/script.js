@@ -15,24 +15,9 @@
 			return 'nożyce';
 		} else if(argMoveId == 3){
 			return 'papier';
-		} else {
-			printMessage('Nie ma takiego ruchu');
 		}
 	}
-/*    const playerMove = getMoveName(playerInput);*/
-/*const getMoveName = function(argMoveId) {
-	if (argMoveId == 1) {
-		return 'kamień';
-    } else if(argMoveId == 2) {
-		return 'nożyce';
-    } else if(argMoveId == 3) {
-		return 'papier';
-    } else {
-		printMessage('Wybież inny ruch niż "' + argMoveId + '"!');
-	}
-	printMessage('Twój ruch to: ' + playerMove);
-}
-*/
+
 	const displayResult = function(argComputerMove, argPlayerMove){
 		printMessage('Komputer zagrał ' + argComputerMove + ', a Ja ' + argPlayerMove);
 
@@ -50,7 +35,6 @@
 	}
 	const computerMove = getMoveName(randomNumber);
 	printMessage('Komputer wybrał: ' + computerMove);
-	/*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
   
 	const playerMove = getMoveName(playerInput);
   
