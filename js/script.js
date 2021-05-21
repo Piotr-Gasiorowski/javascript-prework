@@ -1,3 +1,6 @@
+const paper = 'papier';
+const scissors = 'nożyczki';
+const rock = 'kamień';
 {function playGame(playerInput){
 	console.log('playerInput');
 	
